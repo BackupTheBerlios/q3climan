@@ -40,8 +40,14 @@ public class CM_main extends JFrame {
     
     // Projekt Haupt Klasse (Ab hier geht alles los!)
     public static void main(String[] args) {
- 		if (!args.equals("")) {System.out.println("Übergebene Systemargumente waren: (" + args +")");}
- 		JFrame.setDefaultLookAndFeelDecorated(true);
+        if (args.length != 0) {
+            System.out.println("Anzahl der Systemargumente   : " + args.length);
+            System.out.println("--------------------------------------------");
+            for(int i = 0; i < args.length; i++) {
+	            System.out.println("Übergebenes Systemargument " + i + " : " + args[i]);
+			}
+        }
+        JFrame.setDefaultLookAndFeelDecorated(true);
         JDialog.setDefaultLookAndFeelDecorated(true);
         initLookAndFeel();
         new CM_main();
