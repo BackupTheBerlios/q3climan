@@ -1,26 +1,26 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <exe4j version="3.0.1">
-  <directoryPresets config="F:/Projekte/Eclipse/Workspace/Q3_CliMan/_eXtras/includes" />
-  <application name="Q3CLiMaN" distributionSourceDir="F:/Projekte/Eclipse/Workspace/Q3_CliMan/_eXtras" />
-  <executable name="Q3CLiMaN" type="2" iconSet="true" iconFile="F:/Projekte/Eclipse/Workspace/Q3_CliMan/_eXtras/exe4j/Quake3.ico" executableDir="." redirectStderr="true" stderrFile="Q3CLiMaN_eRRoR.log" redirectStdout="true" stdoutFile="Q3CLiMaN_OuTPuT.log" failOnStderrOutput="true" executableMode="1" changeWorkingDirectory="true" workingDirectory="." singleInstance="true" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="">
+  <directoryPresets config="F:/Projekte/Eclipse/Workspace/Q3_CLiMaN/_eXtras/inc" />
+  <application name="Q3CLiMaN" distributionSourceDir="F:/Projekte/Eclipse/Workspace/Q3_CLiMaN/_eXtras/exe4j" />
+  <executable name="Q3CLiMaN" type="2" iconSet="true" iconFile="F:/Projekte/Eclipse/Workspace/Q3_CLiMaN/_eXtras/exe4j/Quake3.ico" executableDir="." redirectStderr="true" stderrFile="q3cm_error.log" redirectStdout="true" stdoutFile="q3cm_output.log" failOnStderrOutput="true" executableMode="1" changeWorkingDirectory="true" workingDirectory="." singleInstance="true" serviceStartType="2" serviceDependencies="" serviceDescription="" jreLocation="">
     <messageSet language="English">
       <message id="JVM_START" text="The Java VM could not be started. The main method may have thrown an exception." />
       <message id="JVM_IN_PATH" text="The Java VM found in your path is damaged.\nPlease reinstall or define JAVA_HOME\nto point to an installed JDK or JRE." />
-      <message id="ERROR_DIALOG_CAPTION" text="eRRoR" />
       <message id="ERROR_DIALOG_OK" text="OK!" />
-      <message id="JVM_DEFINED_PATH" text="The Java VM found at %DEFINED_PATH% is damaged.\nPlease reinstall or define JAVA_HOME\nto point to an installed JDK or JRE." />
-      <message id="NO_JVM_FOUND" text="No Java VM could be found on your system or is to old!\nDownload a Java Runtime under www.java.com." />
+      <message id="ERROR_DIALOG_CAPTION" text="eRRoR" />
       <message id="MESSAGE_BOX_TITLE" text=":: eRRoR ::" />
+      <message id="NO_JVM_FOUND" text="No Java VM could be found on your system or is to old!\nDownload a Java Runtime under www.java.com." />
+      <message id="JVM_DEFINED_PATH" text="The Java VM found at %DEFINED_PATH% is damaged.\nPlease reinstall or define JAVA_HOME\nto point to an installed JDK or JRE." />
     </messageSet>
-    <versionInfo include="true" fileVersion="0.02" companyName="Stoned Productions ;-)" fileDescription="Quake 3 - Client Manager 2oo5" legalCopyright="Legalize it!" productVersion="0.02" internalName="Q3CLiMaN.2K5" />
+    <versionInfo include="true" fileVersion="0.03" companyName="Stoned Productions ;-)" fileDescription="Quake 3 - Client Manager 2oo5" legalCopyright="Legalize it!" productVersion="0.01" internalName="Q3CLiMaN.2K5" />
   </executable>
-  <splashScreen show="true" autoOff="true" alwaysOnTop="true" width="400" height="321" bitmapFile="F:/Projekte/Eclipse/Workspace/Q3_CliMan/_eXtras/exe4j/q3climan.png">
+  <splashScreen show="true" autoOff="true" alwaysOnTop="true" width="400" height="321" bitmapFile="F:/Projekte/Eclipse/Workspace/Q3_CLiMaN/_eXtras/exe4j/q3climan.png">
     <text>
       <statusLine x="31" y="304" text="Loading ..." font="Arial" fontSize="8" fontColor="255,255,255" fontWeight="500" />
       <versionLine x="316" y="304" text="version %VERSION%" font="Arial" fontSize="8" fontColor="255,255,255" fontWeight="500" />
     </text>
   </splashScreen>
-  <java mainClass="de.q3_CLiMan.CM_main" vmParameters="" arguments="" allowVMPassthroughParameters="true" minVersion="1.5" maxVersion="" preferredVM="" allowBetaVM="true">
+  <java mainClass="de.q3cm.CM_main" vmParameters="" arguments="" allowVMPassthroughParameters="true" minVersion="1.5" maxVersion="" preferredVM="" allowBetaVM="false">
     <searchSequence>
       <registry />
       <envVar name="JAVA_HOME" />
@@ -28,7 +28,7 @@
     </searchSequence>
     <classPath>
       <archive location="./q3climan.jar" failOnError="false" />
-      <archive location="./includes/looks-1.3b1.jar" failOnError="false" />
+      <archive location="../inc/looks-1.3b1.jar" failOnError="false" />
     </classPath>
     <nativeLibraryDirectories />
   </java>
