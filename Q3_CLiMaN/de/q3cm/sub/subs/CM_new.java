@@ -156,11 +156,11 @@ public class CM_new extends JPanel {
 					    wP_step5.setVisible(false);
 					    
 					    switch (WizardStepPos) {
-					     case 1: wP_step1.setVisible(true);
-					     case 2: wP_step2.setVisible(true);
-					     case 3: wP_step3.setVisible(true);
-					     case 4: wP_step4.setVisible(true);
-					     case 5: wP_step5.setVisible(true);
+					     case 1: wP_step1.setVisible(true); break;
+					     case 2: wP_step2.setVisible(true); break;
+					     case 3: wP_step3.setVisible(true); break;
+					     case 4: wP_step4.setVisible(true); break;
+					     case 5: wP_step5.setVisible(true); break;
 					    }
 					}
 				});
@@ -231,11 +231,11 @@ public class CM_new extends JPanel {
 					    wP_step5.setVisible(false);
 					    
 					    switch (WizardStepPos) {
-					     case 1: wP_step1.setVisible(true);
-					     case 2: wP_step2.setVisible(true);
-					     case 3: wP_step3.setVisible(true);
-					     case 4: wP_step4.setVisible(true);
-					     case 5: wP_step5.setVisible(true);
+					     case 1: wP_step1.setVisible(true); break;
+					     case 2: wP_step2.setVisible(true); break;
+					     case 3: wP_step3.setVisible(true); break;
+					     case 4: wP_step4.setVisible(true); break;
+					     case 5: wP_step5.setVisible(true); break;
 					    }
 					}
 				});
